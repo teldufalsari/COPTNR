@@ -1,6 +1,8 @@
 regexp_integer='^[0-9]+$'
 
-if [ $# -eq 1 ]; then # auto thread count
+if [ $# -eq 0 ]; then  #full auto
+    ./gen.py 1000 | ./qsort -s 1000
+elif [ $# -eq 1 ]; then # auto thread count
     if ! [[ $1 =~ $regexp_integer ]] ; then
         echo "Error: [N] must be an non-negative integer" >&2; exit 1
     else
