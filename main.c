@@ -87,7 +87,13 @@ int main(int argc, char* argv[])
     for (size_t i = 0; i < batch_size; i++) {
         printf("%d, ", array[i]);
     }
-    printf("]\n");
+    printf("]\n\n");
     free(array);
+    puts("╔══  ╔══╗ ╔══╗ ══╦══ ║   ║ ╔══╗");
+    puts("║    ║  ║ ║  ║   ║   ║  ╔╣ ║  ║");
+    puts("║    ║  ║ ╠══╝   ║   ║ ╔╝║ ╠══╝");
+    puts("║    ║  ║ ║      ║   ║╔╝ ║ ║");
+    puts("╚══  ╚══╝ ║      ║   ╚╝  ║ ║");
+    puts("\nПРОВЕРЕНО. СОРТИРУЕТ");
     return 0;
 }
